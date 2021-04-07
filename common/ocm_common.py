@@ -1,6 +1,6 @@
 class OcmCommon:
     # Get the current ocm version
-    def get_ocm_version(self):
+    def get_ocm_version():
         '''
         The function will get the current ocm version
         :return: 
