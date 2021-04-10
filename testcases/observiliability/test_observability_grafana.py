@@ -1,12 +1,12 @@
 import pytest
 import allure
 
-from common.ocm_common import OcmCommon
+from common.version_util import *
 
 @allure.severity(allure.severity_level.CRITICAL)
 @allure.epic("Observability")
 @allure.feature("Observability Granafa")
-@pytest.mark.skipif(OcmCommon.get_ocm_version() < '2.2', reason='The feature was GAed in 2.2+ version')
+@pytest.mark.skipif(get_acm_version('ocm') < '2.2', reason='The feature was GAed in 2.2+ version')
 class TestObservabilityGrafana():
     '''
     Used to test the grafana function created by OCM observability.
