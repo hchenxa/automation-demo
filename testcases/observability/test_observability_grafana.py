@@ -1,7 +1,7 @@
 import pytest
 import allure
 
-from common.version_util import *
+from common.version import get_acm_version
 
 @allure.severity(allure.severity_level.CRITICAL)
 @allure.epic("Observability")
