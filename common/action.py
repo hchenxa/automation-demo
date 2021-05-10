@@ -1,6 +1,8 @@
-import commands
+import os
 
-def create():
+def create_with_clusterscope(name):
+
+def create(name, namespace):
 
 def update(name, namespace):
 
