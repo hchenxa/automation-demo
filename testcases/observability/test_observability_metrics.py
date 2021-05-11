@@ -6,7 +6,7 @@ from common import resources, observability
 @allure.severity(allure.severity_level.CRITICAL)
 @allure.epic("Observability Core")
 @pytest.mark.skipif(resources.get_acm_version() < '2.2', reason='The feature was GAed in 2.2+ version')
-class TestObservabilityCustomizedMetrics():
+class TestObservabilityMetrics():
     '''
     Used to test the grafana function created by OCM observability.
     '''
